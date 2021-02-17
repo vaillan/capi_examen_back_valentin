@@ -38,6 +38,6 @@ class User extends Authenticatable
     ];
 
     public function userDomicilio(){
-        return $this->belongsTo('App\UserDomicilio');
+        return $this->belongsTo('App\UserDomicilio', 'id');
     }
 }
